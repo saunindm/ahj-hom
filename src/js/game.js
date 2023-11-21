@@ -40,7 +40,7 @@ export default class Game {
     cell.classList.add('cell_active');
   }
 
-  changeGoblin(img) {
+  changeGoblinPosition(img) {
     const min = 0;
     const max = this.boardSize ** 2 - 1;
     let i = this.randomPosition(min, max);
@@ -61,7 +61,7 @@ export default class Game {
     this.insertGoblin(img);
 
     setInterval(() => {
-      this.changeGoblin(img);
+      this.changeGoblinPosition(img);
     }, 1000);
   }
 }

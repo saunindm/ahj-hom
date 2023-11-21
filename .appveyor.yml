@@ -19,7 +19,7 @@ build_script:
 test_script:
   - npm run lint  # скрипт тестирования
 
-deploy_script:  # скрипт развёртывания 1
+deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name saunindm
   - git config --global user.email saunindm@gmail.com
